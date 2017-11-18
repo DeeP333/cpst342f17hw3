@@ -8,7 +8,7 @@
 <body >
 	<header>
 		<div class="container">
-			<h1 id="welcome" class="col col-4"></h1>
+			<h1 id="welcome" class="col col-4">Welcome to my page</h1>
 				<nav>
 					<ul>
 						<li><a href="./about.html">About</a></li>
@@ -16,15 +16,13 @@
 				</nav>
 		</div>
 	</header>
-	<input type="text" id="yourName" value="Some text...">
-
-
-<button onclick="myFunction()">Try it</button>
+	<input type="text" id="yourName" value="Enter your name">
+	<button onclick="myFunction()">Try it</button>
 
 <script>
 function myFunction() {
     var x = document.getElementById("yourName").value;
-    var y = "welcome ";
+    var y = "Welcome ";
     document.getElementById("welcome").innerHTML = y +x;
 }
 </script>
