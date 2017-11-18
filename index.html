@@ -5,10 +5,10 @@
 	<title>CPST 342 HW 1 - Dee Perkins</title>
 	<link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body onload input type="text" id="yourName" placeholder="Enter your name">>
 	<header>
 		<div class="container">
-			<h1 class="col col-4">Welcome to my page</h1>
+			<h1 id="welcome"class="col col-4">Welcome </h1>
 				<nav>
 					<ul>
 						<li><a href="./about.html">About</a></li>
@@ -16,12 +16,13 @@
 				</nav>
 		</div>
 	</header>
-	<input type="text" id="yourName" value="Enter your name">
+	<button onlick="enterName()">submit</button>
 	<script>
 		function enterName() {
-			var x = document.getElementById("yourName").value;
-			document.getElementById("").innerHTML = x;
+			var x = document.getElementById("yourName").placeholder;
+			document.getElementById("welcome").innerHTML = x;
 		}
+		</script>
 	<h2 class="col col-8">This is where you can learn more about my adventures with bitcoin.</h2>
 	<br />
 <div class="container">
