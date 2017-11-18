@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>CPST 342 HW 1 - Dee Perkins</title>
+	<title>CPST 342 HW 3 - Dee Perkins</title>
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body >
@@ -16,14 +16,19 @@
 				</nav>
 		</div>
 	</header>
-	<input type="text" id="yourName" placeholder="Enter your name">
-	<button onlick="enterName()">submit</button>
-	<script>
-		function enterName() {
-			var x = document.getElementById("yourName").placeholder;
-			document.getElementById("welcome").innerHTML = Welcome x;
-		}
-		</script>
+	<input type="text" id="yourName" value="Some text...">
+
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("yourName").value;
+    var y = "welcome ";
+    document.getElementById("welcome").innerHTML = y +x;
+}
+</script>
+
 	<h2 class="col col-8">This is where you can learn more about my adventures with bitcoin.</h2>
 	<br />
 <div class="container">
